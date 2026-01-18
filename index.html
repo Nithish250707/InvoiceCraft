@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="InvoiceCraft - Craft professional invoices in seconds. No signup. No clutter. Free forever.">
+    <meta name="keywords" content="invoice, invoice generator, free invoice, PDF invoice, freelancer invoice">
+    <meta name="author" content="InvoiceCraft">
+    <title>InvoiceCraft - Craft Professional Invoices in Seconds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="assets/logo-icon.png" alt="InvoiceCraft Icon" class="nav-logo-icon">
+                <img src="assets/logo-text.png" alt="InvoiceCraft" class="nav-logo-text">
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <button class="btn btn-primary btn-sm" onclick="navigateToBuilder()">Create Invoice</button>
+            </div>
+        </nav>
+
+        <main class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>100% Free • No Signup Required</span>
+                </div>
+                <h1 class="hero-title">InvoiceCraft</h1>
+                <p class="hero-tagline">Craft professional invoices in seconds</p>
+                <p class="hero-description">No signup. No clutter. Free forever.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="navigateToBuilder()">
+                        <span class="btn-icon">📄</span>
+                        Create Invoice
+                    </button>
+                    <p class="cta-subtext">Start creating in 10 seconds</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="invoice-preview-card">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-logo-area">
+                            <div class="preview-logo-placeholder"></div>
+                            <div class="preview-text-lines">
+                                <div class="line short"></div>
+                                <div class="line medium"></div>
+                            </div>
+                        </div>
+                        <div class="preview-table">
+                            <div class="table-header">
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                            </div>
+                        </div>
+                        <div class="preview-total">
+                            <div class="total-line"></div>
+                            <div class="total-amount"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why Choose InvoiceCraft?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Create professional invoices in under a minute. No learning curve required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Private & Secure</h3>
+                    <p>All data stays in your browser. We never store or share your information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Fully responsive design works on desktop, tablet, and mobile devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Free Forever</h3>
+                    <p>No hidden fees, no premium tiers. Full features available to everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Fill in Details</h3>
+                    <p>Enter your business and client information</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Add Line Items</h3>
+                    <p>Add products or services with quantities and prices</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Download PDF</h3>
+                    <p>Get your professional invoice instantly</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="assets/logo-icon.png" alt="InvoiceCraft Icon" class="footer-logo-icon">
+                        <img src="assets/logo-text.png" alt="InvoiceCraft" class="footer-logo-text">
+                    </div>
+                    <p>Craft professional invoices in seconds</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2026 InvoiceCraft. Made with ❤️ for freelancers.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Invoice Builder Page -->
+    <div id="builder-page" class="page">
+        <nav class="navbar navbar-builder">
+            <div class="nav-brand" onclick="navigateToLanding()" style="cursor: pointer;">
+                <img src="assets/logo-icon.png" alt="InvoiceCraft Icon" class="nav-logo-icon">
+                <img src="assets/logo-text.png" alt="InvoiceCraft" class="nav-logo-text">
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-ghost" onclick="clearInvoice()" id="clear-btn">
+                    <span class="btn-icon">🗑️</span>
+                    Clear
+                </button>
+                <button class="btn btn-primary" onclick="downloadPDF()" id="download-btn">
+                    <span class="btn-icon">📥</span>
+                    Download PDF
+                </button>
+            </div>
+        </nav>
+
+        <div class="builder-container">
+            <!-- Left: Form -->
+            <div class="form-panel">
+                <form id="invoice-form">
+                    <!-- Business Information -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">🏢</span>
+                            <h3>Business Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Logo</label>
+                            <div class="logo-upload-container">
+                                <div class="logo-preview" id="logo-preview">
+                                    <img id="logo-preview-img" src="" alt="Logo Preview" style="display: none;">
+                                    <div class="logo-placeholder" id="logo-placeholder">
+                                        <span class="upload-icon">🖼️</span>
+                                        <span>Upload Logo</span>
+                                    </div>
+                                </div>
+                                <div class="logo-actions">
+                                    <label for="logo-upload" class="btn btn-secondary btn-sm">
+                                        <span class="btn-icon">📁</span>
+                                        Choose File
+                                    </label>
+                                    <input type="file" id="logo-upload" accept="image/*" style="display: none;"
+                                        onchange="handleLogoUpload(event)">
+                                    <button type="button" class="btn btn-ghost btn-sm" onclick="removeLogo()"
+                                        id="remove-logo-btn" style="display: none;">
+                                        <span class="btn-icon">✕</span>
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" id="business-name" placeholder="Your Business Name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="business-email">Email</label>
+                            <input type="email" id="business-email" placeholder="business@email.com" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="business-address">Address</label>
+                            <textarea id="business-address" placeholder="123 Business St, City, Country"
+                                class="form-input form-textarea" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Client Information -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">👤</span>
+                            <h3>Bill To</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="client-name">Client Name</label>
+                            <input type="text" id="client-name" placeholder="Who is this to?" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="client-email">Client Email</label>
+                            <input type="email" id="client-email" placeholder="client@email.com" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="client-address">Client Address</label>
+                            <textarea id="client-address" placeholder="456 Client Ave, City, Country"
+                                class="form-input form-textarea" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Ship To (Optional) -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">📦</span>
+                            <h3>Ship To <span class="optional-label">(optional)</span></h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-to">Shipping Address</label>
+                            <textarea id="ship-to" placeholder="Shipping address if different from billing"
+                                class="form-input form-textarea" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Details -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">📋</span>
+                            <h3>Invoice Details</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="invoice-number">Invoice #</label>
+                                <input type="text" id="invoice-number" placeholder="1" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="currency-select">Currency</label>
+                                <select id="currency-select" class="form-input form-select">
+                                    <option value="USD">USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                    <option value="INR">INR (₹)</option>
+                                    <option value="JPY">JPY (¥)</option>
+                                    <option value="CNY">CNY (¥)</option>
+                                    <option value="AUD">AUD (A$)</option>
+                                    <option value="CAD">CAD (C$)</option>
+                                    <option value="CHF">CHF (Fr)</option>
+                                    <option value="HKD">HKD (HK$)</option>
+                                    <option value="SGD">SGD (S$)</option>
+                                    <option value="SEK">SEK (kr)</option>
+                                    <option value="KRW">KRW (₩)</option>
+                                    <option value="MXN">MXN ($)</option>
+                                    <option value="BRL">BRL (R$)</option>
+                                    <option value="RUB">RUB (₽)</option>
+                                    <option value="ZAR">ZAR (R)</option>
+                                    <option value="AED">AED (د.إ)</option>
+                                    <option value="SAR">SAR (﷼)</option>
+                                    <option value="NZD">NZD (NZ$)</option>
+                                    <option value="THB">THB (฿)</option>
+                                    <option value="PHP">PHP (₱)</option>
+                                    <option value="MYR">MYR (RM)</option>
+                                    <option value="IDR">IDR (Rp)</option>
+                                    <option value="PLN">PLN (zł)</option>
+                                    <option value="TRY">TRY (₺)</option>
+                                    <option value="NOK">NOK (kr)</option>
+                                    <option value="DKK">DKK (kr)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="invoice-date">Date</label>
+                                <input type="date" id="invoice-date" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="due-date">Due Date</label>
+                                <input type="date" id="due-date" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="payment-terms">Payment Terms</label>
+                                <input type="text" id="payment-terms" placeholder="Net 30" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="po-number">PO Number</label>
+                                <input type="text" id="po-number" placeholder="Optional" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line Items -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">📦</span>
+                            <h3>Line Items</h3>
+                        </div>
+                        <div id="line-items-container">
+                            <!-- Line items will be added here dynamically -->
+                        </div>
+                        <button type="button" class="btn btn-secondary btn-add-item" onclick="addLineItem()">
+                            <span class="btn-icon">➕</span>
+                            Add Item
+                        </button>
+                    </div>
+
+                    <!-- Notes & Terms -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">📝</span>
+                            <h3>Notes & Terms</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" placeholder="Notes - any relevant information not already covered"
+                                class="form-input form-textarea" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="terms">Terms</label>
+                            <textarea id="terms"
+                                placeholder="Terms and conditions - late fees, payment methods, delivery schedule"
+                                class="form-input form-textarea" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Summary -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-icon">💵</span>
+                            <h3>Summary</h3>
+                        </div>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal-display">$0.00</span>
+                        </div>
+                        <div class="form-group tax-group">
+                            <label for="tax-rate">Tax (%)</label>
+                            <input type="number" id="tax-rate" placeholder="0" class="form-input form-input-sm" min="0"
+                                max="100" step="0.1">
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="tax-display">$0.00</span>
+                        </div>
+                        <div class="summary-actions">
+                            <button type="button" class="btn btn-link" onclick="toggleDiscount()"
+                                id="toggle-discount-btn">
+                                <span class="btn-icon">➕</span> Discount
+                            </button>
+                            <button type="button" class="btn btn-link" onclick="toggleShipping()"
+                                id="toggle-shipping-btn">
+                                <span class="btn-icon">➕</span> Shipping
+                            </button>
+                        </div>
+                        <div class="form-group discount-group" id="discount-group" style="display: none;">
+                            <label for="discount">Discount</label>
+                            <div class="input-with-toggle">
+                                <input type="number" id="discount" placeholder="0" class="form-input form-input-sm"
+                                    min="0" step="0.01">
+                                <button type="button" class="toggle-btn" id="discount-type-btn"
+                                    onclick="toggleDiscountType()">%</button>
+                            </div>
+                        </div>
+                        <div class="summary-row discount-row" id="discount-row" style="display: none;">
+                            <span>Discount</span>
+                            <span id="discount-display">-$0.00</span>
+                        </div>
+                        <div class="form-group shipping-group" id="shipping-group" style="display: none;">
+                            <label for="shipping">Shipping</label>
+                            <input type="number" id="shipping" placeholder="0" class="form-input form-input-sm" min="0"
+                                step="0.01">
+                        </div>
+                        <div class="summary-row shipping-row" id="shipping-row" style="display: none;">
+                            <span>Shipping</span>
+                            <span id="shipping-display">$0.00</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span id="total-display">$0.00</span>
+                        </div>
+                        <div class="form-group amount-paid-group">
+                            <label for="amount-paid">Amount Paid</label>
+                            <input type="number" id="amount-paid" placeholder="0" class="form-input form-input-sm"
+                                min="0" step="0.01">
+                        </div>
+                        <div class="summary-row balance-row">
+                            <span>Balance Due</span>
+                            <span id="balance-display">$0.00</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right: Live Preview -->
+            <div class="preview-panel">
+                <div class="preview-header-bar">
+                    <span class="preview-label">📄 Live Preview</span>
+                    <span class="preview-badge">Updates instantly</span>
+                </div>
+                <div class="preview-scroll-container">
+                    <div id="invoice-preview" class="invoice-preview">
+                        <!-- Invoice preview content will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Template (Hidden) -->
+    <div id="pdf-template" style="position: absolute; left: -9999px; top: -9999px;">
+        <!-- This will be used for PDF generation -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

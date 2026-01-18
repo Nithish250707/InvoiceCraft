@@ -1,0 +1,74 @@
+/* Logo Upload Styles */
+.logo-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: var(--gray-50);
+    border: 2px dashed var(--gray-200);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.logo-upload-container:hover {
+    border-color: var(--primary-400);
+    background: var(--primary-50);
+}
+
+.logo-preview {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+}
+
+.logo-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-400);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.logo-placeholder .upload-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.logo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Invoice Preview Logo (larger) */
+.invoice-logo {
+    height: 60px !important;
+    width: auto !important;
+    max-width: 200px;
+}
+
+.invoice-branding .company-logo {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+/* Make invoice preview header logo larger */
+.invoice-header .invoice-branding {
+    min-height: 60px;
+}
